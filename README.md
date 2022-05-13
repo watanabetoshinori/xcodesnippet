@@ -31,7 +31,7 @@ This tool was developed with great inspiration from Matt Thompson's [Xcode-Snipp
 
 ### Requirements
 
-* Xcode 13.0+
+* Xcode 13.2+
 * Swift 5.4+
 
 ### Build
@@ -53,6 +53,12 @@ Use the `release` option to create a universal binary.
 
 ```console
 $ swift build -c release --arch arm64 --arch x86_64
+```
+
+**Note:** If you encounter the following error during build, please check your xcode version. v13.2 or higher is required.
+
+```console
+error: concurrency is only available in macOS 12.0.0 or newer
 ```
 
 ## Usage
